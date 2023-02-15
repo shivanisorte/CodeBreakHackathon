@@ -2,4 +2,5 @@
     <string name="app_name">LeyFit</string>
     <string name="leyfit">LeyFit</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_maps_key">AIzaSyDWLTxT0Rri8OTMWDUYzJ7e7YIDk_PK2fw</string>
 </resources>
