@@ -11,6 +11,13 @@ import Stack from "@mui/joy/Stack";
 import Modal from "@mui/joy/Modal";
 // import Add from "@mui/icons-material/Add";
 import Typography from "@mui/joy/Typography";
+const locations = [
+  { place: "Loni", distance: "5km" },
+  { place: "Aundh", distance: "7km" },
+  { place: "VimanNager", distance: "21km" },
+  { place: "Lonavala", distance: "50km" },
+  { place: "Kharghar", distance: "90km" },
+];
 function Dashboard() {
   const [cat, setCat] = useState("Brakes");
   const [open, setOpen] = useState(false);
@@ -125,6 +132,31 @@ function Dashboard() {
           </ModalDialog>
         </Modal>
         <h2>Quanity Remaining: {data[cat]}</h2>
+        <h1>Requests:</h1>
+        {locations.map((location) => {
+          return (
+            <div
+              style={{
+                margin: "1rem auto",
+                boxShadow: "0px 2px 3px 0px",
+                padding: "1rem",
+                width: "50%",
+              }}
+            >
+              <div style={{ display: "flex", justifyContent: "space-between" }}>
+                <div>
+                  <div style={{ textAlign: "left" }}> {location.place}</div>
+                  <div style={{ textAlign: "left" }}>
+                    distance: {location.distance}
+                  </div>
+                </div>
+                <div>
+                  <Button>Dispatch</Button>
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
