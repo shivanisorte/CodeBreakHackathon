@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+}
+.nav {
+  /* background-color: red; */
+  height: 100vh;
+  flex-grow: 1;
+  border-right: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  text-align: center;
+}
+
+.main {
+  /* background-color: blue; */
+  flex-grow: 5;
+  text-align: center;
+}
+
+.spare {
+  margin-top: 1rem;
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.spare:hover {
+  border-bottom: 3px solid #1677d4;
+  color: #1677d4;
+}

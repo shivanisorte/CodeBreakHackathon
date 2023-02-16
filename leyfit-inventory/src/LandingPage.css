@@ -1,0 +1,87 @@
+@import url("./index.css");
+.footer {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: rgb(4, 22, 68);
+  border-radius: 0.5rem 0.5rem 0 0;
+  color: white;
+  text-align: center;
+  padding: 0.75rem;
+}
+
+.footer-links {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-light-gray);
+}
+
+.footer-links i {
+  color: var(--color-light-gray);
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-links i:hover {
+  color: var(--color-barcelona-red);
+}
+
+.footer-holder {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media (min-width: 40em) {
+  .footer-holder {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+.insider {
+  display: flex;
+  justify-content: space-around;
+}
+
+img {
+  width: 60vw;
+  height: 60vh;
+  margin-top: 20vh;
+}
+
+.head {
+  display: flex;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 80px;
+  margin-top: 50px;
+}
+
+#it {
+  color: #1677d4;
+}
+
+button {
+  width: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  background-color: #1677d4;
+  color: white;
+  border-radius: 5px;
+}
+#motto {
+  font-size: 25px;
+  margin-top: -50px;
+}
+
+#motto2 {
+  font-size: 15px;
+  color: gray;
+}
